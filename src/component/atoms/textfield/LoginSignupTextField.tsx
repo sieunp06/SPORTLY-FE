@@ -3,15 +3,16 @@ import React, { useState } from "react";
 
 interface LoginSignUpTextFieldProps {
     type: "text" | "password";
-    text: string;
+    placeholder: string;
 }
 
-export const LoginSignUpTextField = ({ type, text }: LoginSignUpTextFieldProps) => {
+export const LoginSignUpTextField = ({ type, placeholder }: LoginSignUpTextFieldProps) => {
     const [value, setValue] = useState("");
     const [error, setError] = useState(false);
+    const [errorMessage, setErrorMessage] = useState("");
 
     const validate = () => {
-        return validateEmptySpace();
+        setErrorMessage(validateEmptySpace());
     };
 
     const validateEmptySpace = () => {
@@ -25,16 +26,15 @@ export const LoginSignUpTextField = ({ type, text }: LoginSignUpTextFieldProps) 
 
     return (
         <TextField
-            error
             type={type}
             id="standard-basic"
-            label={text}
             value={value}
-            helperText={error ? validate() : ""}
+            helperText={errorMessage}
             onChange={(e) => setValue(e.target.value)}
             onBlur={validate}
             variant="standard"
             multiline={false}
+            placeholder={placeholder}
         ></TextField>
     );
 };

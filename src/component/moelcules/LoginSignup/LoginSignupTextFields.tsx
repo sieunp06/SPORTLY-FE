@@ -4,8 +4,12 @@ import { LoginSignUpTextField } from "../../atoms";
 export const LoginSignUpTextFields = () => {
     return (
         <div>
-            <LoginSignUpTextField type="text" text="id"></LoginSignUpTextField>
-            <LoginSignUpTextField type="password" text="password"></LoginSignUpTextField>
+            <div>
+                <LoginSignUpTextField type="text" placeholder="이메일"></LoginSignUpTextField>
+            </div>
+            <div>
+                <LoginSignUpTextField type="password" placeholder="비밀번호"></LoginSignUpTextField>
+            </div>
         </div>
     );
 };
