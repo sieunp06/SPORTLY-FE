@@ -1,6 +1,6 @@
 import React from "react";
 import { VerticalCenter } from "../../../style";
-import { GoogleLoginSignupButton, KakaoLoginSignupButton, NaverLoginSignupButton } from "../../moelcules";
+import { GoogleLoginSignupButton, KakaoLoginSignupButton, NaverLoginSignupButton } from "../../molecules";
 
 export const SocialLoginSignupButtons = () => {
     return (

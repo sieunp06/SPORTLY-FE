@@ -1,6 +1,6 @@
 import React from "react";
-import { LoginSignUpTextFields } from "../../moelcules";
-import { LoginSignupButton } from "../../moelcules";
+import { LoginSignUpTextFields } from "../../molecules";
+import { LoginSignupButton } from "../../molecules";
 
 interface LoginSignupFormProps {
     text: string;
