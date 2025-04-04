@@ -1,5 +1,5 @@
 import React from "react";
-import { LoginSignupForm } from "../../organisms";
+import { LoginSignupForm, SocialLoginSignupButtons } from "../../organisms";
 import { Center, Margin } from "../../../style/";
 import { TextButton, TitleText } from "../../atoms";
 import { useNavigate } from "react-router-dom";
@@ -18,6 +18,7 @@ export const LoginSignup = () => {
             <Margin>
                 <TextButton text="회원가입" onClick={moveSignupPage}></TextButton>
             </Margin>
+            <SocialLoginSignupButtons />
         </Center>
     );
 };
