@@ -1,8 +1,7 @@
 import React from "react";
 import { LoginSignupForm } from "../../organisms";
-import { Center, VerticalCenter } from "../../../style/";
-import { Typography } from "@mui/material";
-import { TextButton } from "../../atoms";
+import { Center, Margin } from "../../../style/";
+import { TextButton, TitleText } from "../../atoms";
 import { useNavigate } from "react-router-dom";
 
 export const LoginSignup = () => {
@@ -14,13 +13,11 @@ export const LoginSignup = () => {
 
     return (
         <Center>
-            <VerticalCenter>
-                <Typography component="h3" variant="h3" css="Center">
-                    TITLE
-                </Typography>
-            </VerticalCenter>
+            <TitleText text="title" component="h3" variant="h3" />
             <LoginSignupForm></LoginSignupForm>
-            <TextButton text="회원가입" onClick={moveSignupPage}></TextButton>
+            <Margin>
+                <TextButton text="회원가입" onClick={moveSignupPage}></TextButton>
+            </Margin>
         </Center>
     );
 };

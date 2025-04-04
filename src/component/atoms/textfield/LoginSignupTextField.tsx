@@ -29,7 +29,7 @@ export const LoginSignUpTextField = ({ type, placeholder }: LoginSignUpTextField
             type={type}
             id="standard-basic"
             value={value}
-            helperText={errorMessage}
+            helperText={errorMessage || " "}
             onChange={(e) => setValue(e.target.value)}
             onBlur={validate}
             variant="standard"
