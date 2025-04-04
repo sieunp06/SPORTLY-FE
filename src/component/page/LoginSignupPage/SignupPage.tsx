@@ -1,5 +1,6 @@
 import React from "react";
+import { Signup } from "../../template";
 
 export const SignupPage = () => {
-    return <div>SignupPage</div>;
+    return <Signup></Signup>;
 };

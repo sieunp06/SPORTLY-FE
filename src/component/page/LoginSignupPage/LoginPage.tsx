@@ -1,6 +1,6 @@
 import React from "react";
-import { LoginSignup } from "../../template";
+import { Login } from "../../template";
 
 export const LoginPage = () => {
-    return <LoginSignup></LoginSignup>;
+    return <Login></Login>;
 };
